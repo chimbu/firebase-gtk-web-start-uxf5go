@@ -2,14 +2,17 @@
 import './style.css';
 // Firebase App (the core Firebase SDK) is always required
 import { initializeApp } from 'firebase/app';
+//import { initializeApp } from "firebase/app";
 
 // Add the Firebase products and methods that you want to use
-import { getAuth, EmailAuthProvider } from 'firebase/auth';
 
 import {} from 'firebase/firestore';
 
 import {} from 'firebase/auth';
+
 import {} from 'firebase/firestore';
+
+import { getAuth, EmailAuthProvider } from 'firebase/auth';
 
 import * as firebaseui from 'firebaseui';
 
@@ -52,8 +55,9 @@ async function main() {
 
   // Initialize Firebase
 
-  //const app = initializeApp(firebaseConfig);
-  initializeApp(firebaseConfig);
+  const app = initializeApp(firebaseConfig);
+  //initializeApp(firebaseConfig);
+
   auth = getAuth();
 
   //CA  const firebaseConfig = {};
@@ -77,13 +81,14 @@ async function main() {
   };
 
   // const ui = new firebaseui.auth.AuthUI(auth);
-  const ui = new firebaseui.auth.AuthUI(auth);
+  //xx const ui = new firebaseui.auth.AuthUI(auth);
+
   // Listen to RSVP button clicks
   startRsvpButton.addEventListener('click', () => {
-    //console.log('click');
-    ui.start('#firebaseui-auth-container', uiConfig);
+    console.log('click');
+    //ui.start('#firebaseui-auth-container', uiConfig);
   });
 
-  //console.log('start');
+  console.log('start');
 }
 main();
