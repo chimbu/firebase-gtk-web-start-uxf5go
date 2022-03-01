@@ -34,24 +34,30 @@ async function main() {
 
   // Your web app's Firebase configuration
 
-  const firebaseConfig = {
-    apiKey: 'AIzaSyD0fT6t3T1Ni8NzEvbO52opvgQ3Bo8ev4U',
+  // Your web app's Firebase configuration
 
-    authDomain: 'fir-web-codelab-cc1d4.firebaseapp.com',
+const firebaseConfig = {
 
-    projectId: 'fir-web-codelab-cc1d4',
+  apiKey: "AIzaSyD0fT6t3T1Ni8NzEvbO52opvgQ3Bo8ev4U",
 
-    storageBucket: 'fir-web-codelab-cc1d4.appspot.com',
+  authDomain: "fir-web-codelab-cc1d4.firebaseapp.com",
 
-    messagingSenderId: '161481935409',
+  projectId: "fir-web-codelab-cc1d4",
 
-    appId: '1:161481935409:web:1297c1e81d8130f620a310',
-  };
+  storageBucket: "fir-web-codelab-cc1d4.appspot.com",
+
+  messagingSenderId: "161481935409",
+
+  appId: "1:161481935409:web:9794660d3626fcb020a310"
+
+};
+
+
 
   // Initialize Firebase
 
-  const app = initializeApp(firebaseConfig);
-  //CA initializeApp(firebaseConfig);
+  //const app = initializeApp(firebaseConfig);
+  initializeApp(firebaseConfig);
   auth = getAuth();
 
   //CA  const firebaseConfig = {};
@@ -78,10 +84,10 @@ async function main() {
   const ui = new firebaseui.auth.AuthUI(auth);
   // Listen to RSVP button clicks
   startRsvpButton.addEventListener('click', () => {
-    console.log('click');
-    //ui.start('#firebaseui-auth-container', uiConfig);
+    //console.log('click');
+    ui.start('#firebaseui-auth-container', uiConfig);
   });
 
-  console.log('start');
+  //console.log('start');
 }
 main();
