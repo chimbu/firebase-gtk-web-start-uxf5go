@@ -36,23 +36,19 @@ async function main() {
 
   // Your web app's Firebase configuration
 
-const firebaseConfig = {
+  const firebaseConfig = {
+    apiKey: 'AIzaSyD0fT6t3T1Ni8NzEvbO52opvgQ3Bo8ev4U',
 
-  apiKey: "AIzaSyD0fT6t3T1Ni8NzEvbO52opvgQ3Bo8ev4U",
+    authDomain: 'fir-web-codelab-cc1d4.firebaseapp.com',
 
-  authDomain: "fir-web-codelab-cc1d4.firebaseapp.com",
+    projectId: 'fir-web-codelab-cc1d4',
 
-  projectId: "fir-web-codelab-cc1d4",
+    storageBucket: 'fir-web-codelab-cc1d4.appspot.com',
 
-  storageBucket: "fir-web-codelab-cc1d4.appspot.com",
+    messagingSenderId: '161481935409',
 
-  messagingSenderId: "161481935409",
-
-  appId: "1:161481935409:web:9794660d3626fcb020a310"
-
-};
-
-
+    appId: '1:161481935409:web:9794660d3626fcb020a310',
+  };
 
   // Initialize Firebase
 
